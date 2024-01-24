@@ -38,7 +38,7 @@ const ArtistSection = () => {
     }, [currentSlide]);
 
     return (
-        <section id="artists" className='lg:p-8'>
+        <section id="artists" className='lg:p-8 mt-16'>
 
             <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-2">
                 <span className="text-white">ARTISTS  </span>

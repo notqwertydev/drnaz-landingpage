@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const GigsSection = () => {
     return (
-        <section id='gigs' className='lg:p-8  '>
+        <section id='gigs' className='lg:p-8 mt-16  '>
 
             <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-2">
 

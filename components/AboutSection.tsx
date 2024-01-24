@@ -4,7 +4,7 @@ import React from 'react';
 
 const AboutSection = () => {
     return (
-        <section id='about' className="lg:p-8 overflow-hidden">
+        <section id='about' className="lg:p-8 overflow-hidden mt-16">
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
                 <section className="py-3">
                     <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-2">
