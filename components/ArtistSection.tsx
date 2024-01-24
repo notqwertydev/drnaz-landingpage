@@ -1,7 +1,6 @@
 
 import React from 'react';
 
-
 const ArtistSection = () => {
     return (
         <section className='lg:p-8  '>
@@ -12,6 +11,7 @@ const ArtistSection = () => {
                 <span className="text-white"> </span>
 
             </h1>
+            
 
         </section>
     )

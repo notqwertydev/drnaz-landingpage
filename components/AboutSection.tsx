@@ -4,11 +4,7 @@ import React from 'react';
 
 const AboutSection = () => {
     return (
-        <section className="lg:p-8 overflow-hidden">
-            <div className="mx-auto pt-24 items-center lg:pt-40 w-full rounded-[3rem] overflow-hidden relative"
-               
-            
-            >
+        <section id='about' className="lg:p-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
                 <section className="py-3">
                     <div className="rounded-3xl overflow-hidden bg-darker h-full">
@@ -18,7 +14,7 @@ const AboutSection = () => {
                                     <div className="flex items-center">
                                     </div>
                                     <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
-                                        Abo
+                                        About
                                     </p>
                                     <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
                                         Dr. Naz is a full time dental surgeon with a passion for music. Dj-ing started as a hobby, that then developed into a more regular venture with requests piling up.
@@ -30,7 +26,7 @@ const AboutSection = () => {
                         </div>
                     </div>
                 </section>
-                <div className="xl:col-span-1 hidden sm:block bg-[url(/Pictures/naz3.jpg] ">
+                <div className="xl:col-span-1 hidden sm:block ">
                     <section className="py-3">
                         <div className="rounded-3xl overflow-hidden">
                             <div className=''>
@@ -40,7 +36,7 @@ const AboutSection = () => {
                     </section>
                 </div>
             </div>
-            </div>
+
         </section>
     );
 };

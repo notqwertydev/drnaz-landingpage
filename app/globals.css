@@ -214,8 +214,11 @@ html {
   transition: width 0.5s ease-out;
 }
 
-
-
-
-  
+.bg-darker {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 10% / var(--tw-bg-opacity));
+}
+.black-and-white{
+  filter:grayscale(100%)
+}
 }
