@@ -34,7 +34,7 @@ const NavBar = () => {
             <div className="lg:max-w-2xl mx-auto px-8">
                 <div className="w-full mx-auto">
 
-                    <div className="relative flex flex-col w-full p-3 mx-auto bg-black/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row overflow-hidden">
+                    <div className="relative flex flex-col w-full p-3 mx-auto bg-gray/70 ring-1 ring-inset ring-white/10 shadow-thick backdrop-blur-xl backdrop-filter rounded-xl md:rounded-full md:items-center md:justify-between md:flex-row overflow-hidden">
 
 
 
@@ -57,7 +57,6 @@ const NavBar = () => {
                                 />
                             </a>
 
-                            <div className="progressBar absolute top-0 left-0" style={{ width: `${scrollProgress > 98 ? 98 : scrollProgress}%` }}></div>
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
