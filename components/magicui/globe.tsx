@@ -7,8 +7,8 @@ import { useCallback, useEffect, useRef } from "react";
 import { useSpring } from "react-spring";
 
 const GLOBE_CONFIG: COBEOptions = {
-    width: 800,
-    height: 800,
+    width: 600,
+    height: 600,
     onRender: () => { },
     devicePixelRatio: 2,
     phi: 0,
@@ -18,19 +18,19 @@ const GLOBE_CONFIG: COBEOptions = {
     mapSamples: 16000,
     mapBrightness: 1.2,
     baseColor: [1, 1, 1],
-    markerColor: [251 / 255, 100 / 255, 21 / 255],
+    markerColor: [1, 0, 0],
     glowColor: [1, 1, 1],
     markers: [
-        { location: [14.5995, 120.9842], size: 0.03 },
-        { location: [19.076, 72.8777], size: 0.1 },
-        { location: [23.8103, 90.4125], size: 0.05 },
-        { location: [30.0444, 31.2357], size: 0.07 },
-        { location: [39.9042, 116.4074], size: 0.08 },
-        { location: [-23.5505, -46.6333], size: 0.1 },
-        { location: [19.4326, -99.1332], size: 0.1 },
-        { location: [40.7128, -74.006], size: 0.1 },
-        { location: [34.6937, 135.5022], size: 0.05 },
-        { location: [41.0082, 28.9784], size: 0.06 },
+        { location: [25.276987, 51.520008], size: 0.15 }, // Doha, Qatar
+        { location: [33.893791, 35.501777], size: 0.15 }, // Beirut, Lebanon (assuming Beirut for Lebanon)
+        { location: [35.185566, 33.382276], size: 0.15 }, // Nicosia, Cyprus
+        { location: [40.7128, -74.0060], size: 0.15 }, // New York, USA
+        { location: [34.0522, -118.2437], size: 0.15 }, // Los Angeles, USA
+        { location: [25.276987, 55.296249], size: 0.15 }, // Dubai, UAE
+        { location: [43.7102, 7.2620], size: 0.15 }, // Nice, France
+        { location: [43.5528, 7.0174], size: 0.15 }, // Cannes, France
+        { location: [43.2677, 6.6407], size: 0.15 }, // Saint-Tropez, France
+        { location: [38.9068, 1.4206], size: 0.15 }, // Ibiza, Spain
     ],
 };
 
@@ -103,7 +103,7 @@ export default function Globe({
     return (
         <div
             className={cn(
-                "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[600px]",
+                "absolute inset-0 mx-auto aspect-[1/1] w-full max-w-[400px]",
                 className
             )}
         >

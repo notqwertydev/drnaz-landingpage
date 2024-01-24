@@ -40,15 +40,15 @@ const GigsSection = () => {
                         </div>
                     </div>
                 </section>
-                <div className="relative flex h-full w-full  items-center justify-center  overflow-hidden rounded-lg  bg-darker px-40 pb-40 pt-8 shadow-2xl md:pb-60">
-                    <span className="pointer-events-none  whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-8xl font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-
-                    </span>
+                <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg shadow-2xl">
+                    <div className="relative w-full h-full flex items-center justify-center"> 
                     <center>
-                        <Globe className="" />
-                    </center>
+                        <Globe className=" object-contain" />
+                        </center>
+                    </div>
                     <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
                 </div>
+
 
 
 

@@ -7,7 +7,7 @@ const AboutSection = () => {
         <section id='about' className="lg:p-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
                 <section className="py-3">
-                    <div className="rounded-3xl overflow-hidden bg-darker h-full">
+                    <div className="rounded-3xl overflow-hidden bg-blackr h-full">
                         <div className="overflow-hidden h-full">
                             <div className="p-10 grid content-end">
                                 <div>
