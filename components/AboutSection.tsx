@@ -30,7 +30,7 @@ const AboutSection = () => {
                     <section className="py-3">
                         <div className="rounded-3xl overflow-hidden">
                             <div className=''>
-                                <img className="xl:aspect-square object-cover" alt="#" src="/Pictures/naz3.jpg" />
+                                <img className="xl:aspect-square object-cover" alt="#" src="/Pictures/naz3.JPG" />
                             </div>
                         </div>
                     </section>

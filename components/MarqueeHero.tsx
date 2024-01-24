@@ -19,14 +19,13 @@ const MarqueeComp = () => {
                     innerClassName="" // pass class to change gap or speed
                 >
 
-                    <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-12">
+                    <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-12 text-white"
+                    
+                      
+                    >
+                        DENTIST BY DAY DJ BY NIGHT
 
-                        <span className="text-white">DENTIST </span>
-                        <span className="text-white">BY </span>
-                        <span className="text-white">DAY </span>
-                        <span className="text-white">DJ </span>
-                        <span className="text-white">BY </span>
-                        <span className="text-white">NIGHT </span>
+                     
 
                         
 
