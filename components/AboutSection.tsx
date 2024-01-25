@@ -1,6 +1,7 @@
 // PortfolioSection.js
 
 import React from 'react';
+import SocialLinks from "@/components/SocialLinks";
 
 const AboutSection = () => {
     return (
@@ -8,13 +9,7 @@ const AboutSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
                 <section className="py-3">
                     <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-2">
-
                         <span className="text-white">ABOUT </span>
-                        
-
-
-
-
                     </h1>
                     <div className="rounded-3xl overflow-hidden bg-blackr h-full">
                         <div className="overflow-hidden h-full">
@@ -29,7 +24,10 @@ const AboutSection = () => {
                                         Dr. Naz is a full time dental surgeon with a passion for music. Dj-ing started as a hobby, that then developed into a more regular venture with requests piling up.
                                         Fast forward to today, where he has converted his hobby into a full blown career, playing alongside some of the biggest names in the industry and in clubs all over the world.
                                     </p>
+                                    <SocialLinks/>
                                 </div>
+
+
 
                             </div>
                         </div>

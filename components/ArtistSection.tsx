@@ -6,10 +6,8 @@ const ArtistSection = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            nextSlide();
         }, 3000); // Change image every 5 seconds
 
-        return () => clearInterval(interval);
     }, [currentSlide]);
 
     const showSlides = (n: number) => {
@@ -25,23 +23,94 @@ const ArtistSection = () => {
         setCurrentSlide(n);
     };
 
-    const nextSlide = () => {
-        showSlides(currentSlide + 1);
-    };
+    
 
-    const prevSlide = () => {
-        showSlides(currentSlide - 1);
+
+    const images = [
+        {
+            src: '/Pictures/Francis.JPG',
+            text: 'Francis Mercier',
+        },
+        {
+            src: '/Pictures/nitefreak.jpeg',
+            text: 'Nitefreak',
+        },
+        {
+            src: '/Pictures/andfriends.JPG',
+            text: '&friends',
+        },
+        {
+            src: '/Pictures/ahmedspins.jpeg',
+            text: 'Ahmed Spins',
+        },
+        {
+            src: '/Pictures/cairo.jpeg',
+            text: 'Cairo',
+        }, {
+            src: '/Pictures/aryme.JPG',
+            text: 'Aryme',
+        }, {
+            src: '/Pictures/kasango.jpeg',
+            text: 'Kasango',
+        },
+        {
+            src: '/Pictures/notredame.jpeg',
+            text: 'Notre Dame',
+        },
+
+        {
+            src: '/Pictures/moojo.jpeg',
+            text: 'Moojo',
+        },
+        {
+            src: '/Pictures/shimza.jpeg',
+            text: 'Shimza',
+        }, {
+            src: '/Pictures/gianni.JPG',
+            text: 'Gianni Romano',
+        }, {
+            src: '/Pictures/emmanuel.jpeg',
+            text: 'Emmanuel Esposito',
+        },
+        {
+            src: '/Pictures/kimotion.jpeg',
+            text: 'Kimotion',
+        },
+        {
+            src: '/Pictures/chrisidh.JPG',
+            text: 'Chris IDH',
+        },
+
+
+    ];
+
+    const [currentImage, setCurrentImage] = useState(images[0]);
+    const [highlightedButtonIndex, setHighlightedButtonIndex] = useState(0);
+
+    const changeImage = (image: { src: string; text: string }, index: number) => {
+        setCurrentImage(image);
+        setHighlightedButtonIndex(index);
     };
 
     useEffect(() => {
-        showSlides(currentSlide);
-    }, [currentSlide]);
+        // Function to change the image randomly
+        const changeRandomImage = () => {
+            const randomIndex = Math.floor(Math.random() * images.length);
+            setCurrentImage(images[randomIndex]);
+            setHighlightedButtonIndex(randomIndex);
+        };
+
+        // Change the image every 5 seconds (5000 milliseconds)
+        const intervalId = setInterval(changeRandomImage, 5000);
+
+        return () => clearInterval(intervalId); // Clean up the interval on component unmount
+    }, [images]);
 
     return (
         <section id="artists" className='lg:p-8 mt-16'>
 
             <h1 className="font-normal tracking-tighter uppercase text-6xl lg:text-[8rem] pb-2">
-                <span className="text-white">ARTISTS  </span>
+                <span className="text-white">ARTISTS</span>
                 <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
                     Music with industry playmakers like you’ve never experienced before.
                 </p>
@@ -51,80 +120,28 @@ const ArtistSection = () => {
 
             </h1>
 
-            <div className="mt-12">
+            <div>
+                <div className="mySlides fade">
+                    <div className="numbertext">{images.indexOf(currentImage) + 1} / {images.length}</div>
+                    <img src={currentImage.src} className="slide-image" alt={currentImage.text} />
+                    <div className="text">{currentImage.text}</div>
+                    <br></br>
+                </div>
 
-                {/* Previous Button */}
-                <button
-                    className="prev-slide-button"
-                    onClick={prevSlide}
-                >
-                    &#10094;
-                </button>
-
-                {/* Next Button */}
-                <button
-                    className="next-slide-button"
-                    onClick={nextSlide}
-                >
-                    &#10095;
-                </button>
-                {/* Slides */}
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/Francis.JPG" className="slide-image" />
-                    <div className="text">Francis Mercier</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/nitefreak.jpeg" className="slide-image" />
-                    <div className="text">Nitefreak</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/notredame.jpeg" className="slide-image" />
-                    <div className="text">Notre Dame</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/cairo.jpeg" className="slide-image" />
-                    <div className="text">CAIRO</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/aryme.JPG" className="slide-image" />
-                    <div className="text">ARYME</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/emmanuel.jpeg" className="slide-image" />
-                    <div className="text">EMMANUEL ESPOSITO</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/kasango.jpeg" className="slide-image" />
-                    <div className="text">KASANGO</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/kimotion.jpeg" className="slide-image" />
-                    <div className="text">KIMOTION</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/moojo.jpeg" className="slide-image" />
-                    <div className="text">MOOJO</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/shimza.jpeg" className="slide-image" />
-                    <div className="text">Shimza</div>
-                </div>
-                <div className="mySlides fade">
-                    <div className="numbertext">1 / 3</div>
-                    <img src="/Pictures/ahmedspins.jpeg" className="slide-image" />
-                    <div className="text">Ahmed Spins</div>
+                <div className="mt-10 grid grid-cols-5 gap-4 justify-center">
+                    {images.map((image, index) => (
+                        <button
+                            key={index}
+                            className={`text-white py-2 px-4 rounded-r m-2 ${index === highlightedButtonIndex ? 'text-red-300' : ''
+                                }`}
+                            onClick={() => changeImage(image, index)}
+                        >
+                            {image.text}
+                        </button>
+                    ))}
                 </div>
             </div>
+
 
         </section>
     );

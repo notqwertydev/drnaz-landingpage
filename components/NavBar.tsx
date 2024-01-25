@@ -93,6 +93,12 @@ const NavBar = () => {
                                     </Link>
                                 </li>
 
+                                <li>
+                                    <Link href="/#contact" className="hover:text-[#EE7E72] zoom-on-hover">
+                                        CONTACT
+                                    </Link>
+                                </li>
+
 
                             </ul>
                         </nav>

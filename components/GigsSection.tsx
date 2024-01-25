@@ -41,23 +41,38 @@ const GigsSection = () => {
                     </div>
                 </section>
                 <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-lg shadow-2xl">
-                    <div className="relative w-full h-full flex items-center justify-center"> 
-                    <center>
-                        <Globe className=" object-contain" />
+                    <div className="relative w-full h-full flex items-center justify-center">
+                        <center>
+                            <Globe className=" object-contain" />
                         </center>
                     </div>
                     <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
                 </div>
 
 
+            </div>
 
-
+            <div className="mt-12 flex justify-center">
+                <div className="max-w-screen-l mx-auto overflow-hidden">
+                    <Marquee className="gap-[1rem]"  reverse={true}>
+                        <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
+                        <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
+                        <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
+                        <Image src="/flags/qatar.png" alt="Qatar Flag" width={80} height={70} />
+                        <Image src="/flags/us.png" alt="US Flag" width={80} height={70} />
+                        <Image src="/flags/syria.png" alt="Syria Flag" width={80} height={70} />
+                        <Image src="/flags/spain.png" alt="Spain Flag" width={80} height={70} />
+                        <Image src="/flags/france.png" alt="France Flag" width={80} height={70} />
+                    </Marquee>
+                </div>
             </div>
 
 
 
 
-            <Marquee fade={true} pauseOnHover={true} className='mt-12'>
+
+
+            <Marquee fade={true} pauseOnHover={false} className='mt-5'>
 
                 {/* images logos */}
 
@@ -87,33 +102,3 @@ const GigsSection = () => {
 };
 
 export default GigsSection;
-
-
-
-
-{/* <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 px-0 lg:px-0 gap-6">
-                <section className="py-3">
-                    <div className="rounded-3xl overflow-hidden  h-full">
-                        <div className="overflow-hidden h-full">
-                            <div className="p-10 grid content-end">
-                                <div>
-                                    <div className="flex items-center">
-                                    </div>
-                                    <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
-                                        Beside his passion for music, Dr. Naz has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <div className="flex items-center">
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div className='relative'>
-                    <Globe className="  transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_30%,#000_100%)] group-hover:scale-105 " />
-                </div>
-            </div> */}
