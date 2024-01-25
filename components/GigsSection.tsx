@@ -54,7 +54,7 @@ const GigsSection = () => {
 
             <div className="mt-12 flex justify-center">
                 <div className="max-w-screen-l mx-auto overflow-hidden">
-                    <Marquee className="gap-[1rem]" reverse={true}>
+                    <Marquee className="gap-[1rem]" reverse={true} fade={true} pauseOnHover={true}>
                         <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
                         <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
                         <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
