@@ -7,8 +7,8 @@ import React from 'react';
 
 const MarqueeComp = () => {
     return (
-        <div className="relative w-full">
-            <div className=" whitespace-nowrap gap-4 flex mt-64 lg:mt-96 items-baseline">
+        <div className="absolute bottom-0 w-full">
+            <div className=" whitespace-nowrap gap-4 flex items-baseline">
                 <Marquee
                     // fade={true}
                     direction="left"

@@ -41,8 +41,8 @@ const NavBar = () => {
 
 
                         <div className="flex flex-row items-center align-center justify-between md:justify-start">
-                          
-                           
+
+
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="inline-flex items-center justify-center p-2 text-zinc-400 hover:text-accent-300 focus:outline-none focus:text-white md:hidden"
@@ -77,18 +77,18 @@ const NavBar = () => {
                         >
                             <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
-                                    <Link href="/#about" className="hover:text-accent-400 zoom-on-hover">
+                                    <Link href="/#about" className="hover:text-[#EE7E72] zoom-on-hover">
                                         ABOUT
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#gigs" className="hover:text-accent-400 zoom-on-hover">
+                                    <Link href="/#gigs" className="hover:text-[#EE7E72] zoom-on-hover">
                                         GIGS
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link href="/#artists" className="hover:text-accent-400 zoom-on-hover">
+                                    <Link href="/#artists" className="hover:text-[#EE7E72] zoom-on-hover">
                                         ARTISTS
                                     </Link>
                                 </li>

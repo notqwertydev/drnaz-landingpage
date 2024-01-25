@@ -7,8 +7,8 @@ const HeroSection = () => {
 
 
     return (
-        <section className="lg:p-8 overflow-hidden">
-            <div className="mx-auto pt-24 items-center lg:pt-40 w-full bg-[url('/Pictures/naz15.jpg')] rounded-[3rem] overflow-hidden relative"
+        <section className="h-[100dvh] w-full">
+            <div className=" relative h-[100dvh] mx-auto pt-24 items-center lg:pt-40 w-full bg-[url('/Pictures/naz15.jpg')] rounded-[3rem] overflow-hidden relative"
                 style={{
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
