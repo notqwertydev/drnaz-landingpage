@@ -54,7 +54,15 @@ const GigsSection = () => {
 
             <div className="mt-12 flex justify-center">
                 <div className="max-w-screen-l mx-auto overflow-hidden">
-                    <Marquee className="gap-[1rem]"  reverse={true}>
+                    <Marquee className="gap-[1rem]" reverse={true}>
+                        <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
+                        <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
+                        <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
+                        <Image src="/flags/qatar.png" alt="Qatar Flag" width={80} height={70} />
+                        <Image src="/flags/us.png" alt="US Flag" width={80} height={70} />
+                        <Image src="/flags/syria.png" alt="Syria Flag" width={80} height={70} />
+                        <Image src="/flags/spain.png" alt="Spain Flag" width={80} height={70} />
+                        <Image src="/flags/france.png" alt="France Flag" width={80} height={70} />
                         <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
                         <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
                         <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
@@ -93,6 +101,7 @@ const GigsSection = () => {
                 }} />
 
             </Marquee>
+
 
 
         </section>
