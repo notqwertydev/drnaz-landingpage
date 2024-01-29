@@ -232,7 +232,7 @@ const ContactSection = () => {
                                                     <Select onValueChange={field.onChange} value={field.value} defaultValue={field.value}>
                                                         <FormControl>
                                                             <SelectTrigger className=" text-muted-foreground h-12">
-                                                                <SelectValue  defaultValue={field.value} placeholder="Select an event type" />
+                                                                <SelectValue defaultValue={field.value} placeholder="Select an event type" />
                                                             </SelectTrigger>
                                                         </FormControl>
                                                         <SelectContent>
@@ -337,4 +337,17 @@ const ContactSection = () => {
     );
 };
 
+
+
+
 export default ContactSection;
+
+
+
+
+
+
+
+
+
+

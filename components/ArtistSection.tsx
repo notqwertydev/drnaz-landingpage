@@ -1,6 +1,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 
+
+
+
 const ArtistSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -23,7 +26,7 @@ const ArtistSection = () => {
         setCurrentSlide(n);
     };
 
-    
+
 
 
     const images = [
@@ -141,6 +144,11 @@ const ArtistSection = () => {
                     ))}
                 </div>
             </div>
+
+
+
+
+
 
 
         </section>
