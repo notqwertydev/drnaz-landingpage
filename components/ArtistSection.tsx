@@ -1,4 +1,5 @@
 "use client";
+import { Marquee } from '@devnomic/marquee';
 import React, { useState, useEffect } from 'react';
 
 
@@ -131,18 +132,26 @@ const ArtistSection = () => {
                     <br></br>
                 </div>
 
-                <div className="mt-10 grid grid-cols-5 gap-4 justify-center">
-                    {images.map((image, index) => (
-                        <button
-                            key={index}
-                            className={`text-white py-2 px-4 rounded-r m-2 ${index === highlightedButtonIndex ? 'text-red-300' : ''
-                                }`}
-                            onClick={() => changeImage(image, index)}
-                        >
-                            {image.text}
-                        </button>
-                    ))}
+                <div className="mt-10  gap-4 justify-center">
+                    <div className="mt-10 gap-4 justify-center">
+                        <Marquee direction="left">
+                            <div className="marquee-container">
+                                {images.map((image, index) => (
+                                    <button
+                                        key={index}
+                                        className={`text-white py-2 px-4 rounded-r m-2 ${index === highlightedButtonIndex ? 'text-red-300' : ''}`}
+                                        onClick={() => changeImage(image, index)}
+                                    >
+                                        {image.text}
+                                    </button>
+                                ))}
+                            </div>
+                        </Marquee>
+
+                    </div>
+
                 </div>
+
             </div>
 
 

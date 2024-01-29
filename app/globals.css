@@ -342,7 +342,19 @@
   .next-slide-button:hover {
     background-color: rgba(255, 255, 255, 0.8);
   }
-  
+  .marquee-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    gap: 10px;
+    width: 100%;
+}
+
+/* Ensure Marquee takes full width */
+.Marquee {
+    width: 100%;
+}
+
 
 
 
