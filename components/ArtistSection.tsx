@@ -136,7 +136,7 @@ const ArtistSection = () => {
                     <div className=" flex flex-col mt-10 gap-4 justify-center w-[90%]">
                         <Marquee fade={true} direction="left" className="gap-[0.7rem] [--duration:25s]" innerClassName="gap-[1rem] [--gap:1rem]">
                             {images.slice(0, 7).map((image, index) => (
-                                <div className="marquee-container">
+                                <div key={index} className="marquee-container">
                                     <span
                                         key={index}
                                         className={textStyle + (index === highlightedButtonIndex ? ' text-[#EE7E72]' : '')}
@@ -152,7 +152,7 @@ const ArtistSection = () => {
                             {images.slice(7, 14).map((image, index) => {
                                 const adjustedIndex = index + 7; // Adjusting index for the second Marquee
                                 return (
-                                    <div className="marquee-container" >
+                                    <div key={adjustedIndex} className="marquee-container" >
                                         <span
                                             key={adjustedIndex}
                                             className={textStyle + (adjustedIndex === highlightedButtonIndex ? ' text-[#EE7E72]' : '')}
