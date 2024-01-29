@@ -77,24 +77,24 @@ const NavBar = () => {
                         >
                             <ul className="space-y-8 list-none text-sm text-white md:space-y-0 md:ml-auto items-center md:inline-flex justify-center text-center md:text-left gap-3 lg:gap-6">
                                 <li>
-                                    <Link href="/#about" className="hover:text-[#EE7E72] zoom-on-hover">
+                                    <Link href="/#about" className="hover:text-[#EE7E72] zoom-on-hover" onClick={() => setIsOpen(false)}>
                                         ABOUT
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/#gigs" className="hover:text-[#EE7E72] zoom-on-hover">
+                                    <Link href="/#gigs" className="hover:text-[#EE7E72] zoom-on-hover" onClick={() => setIsOpen(false)}>
                                         GIGS
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link href="/#artists" className="hover:text-[#EE7E72] zoom-on-hover">
+                                    <Link href="/#artists" className="hover:text-[#EE7E72] zoom-on-hover" onClick={() => setIsOpen(false)}>
                                         ARTISTS
                                     </Link>
                                 </li>
 
                                 <li>
-                                    <Link href="/#contact" className="hover:text-[#EE7E72] zoom-on-hover">
+                                    <Link href="/#contact" className="hover:text-[#EE7E72] zoom-on-hover" onClick={() => setIsOpen(false)}>
                                         CONTACT
                                     </Link>
                                 </li>
