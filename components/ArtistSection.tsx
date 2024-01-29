@@ -127,7 +127,7 @@ const ArtistSection = () => {
             <div>
                 <div className="mySlides fade">
                     <div className="numbertext">{images.indexOf(currentImage) + 1} / {images.length}</div>
-                    <img src={currentImage.src} className="slide-image" alt={currentImage.text} />
+                    <img src={currentImage.src} className="slide-image object-contain" alt={currentImage.text} />
                     {/* <div className="text">{currentImage.text}</div>
                     <br></br> */}
                 </div>
