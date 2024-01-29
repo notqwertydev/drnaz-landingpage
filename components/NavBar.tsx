@@ -44,7 +44,7 @@ const NavBar = () => {
 
 
 
-                            <Image src="/drnazz.png" alt="Dr. Naz" width={120} height={120} />
+                            <img src="/drnazz.png" alt="Dr. Naz" width={120} height={35}  loading='lazy' />
 
 
                             <button
