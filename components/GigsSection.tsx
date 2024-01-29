@@ -56,7 +56,7 @@ const GigsSection = () => {
                 <div className="max-w-screen-l mx-auto overflow-hidden">
 
 
-                    <Marquee className="gap-[1rem]" reverse={true} fade={true} pauseOnHover={true}>
+                    <Marquee className="gap-[1rem]" reverse={true} fade={true}>
 
 
 
