@@ -84,6 +84,11 @@ const ArtistSection = () => {
             src: '/Pictures/chrisidh.JPG',
             text: 'Chris IDH',
         },
+        {
+            src: '/Pictures/SebastienLeger.JPG',
+            text: 'Sebastien Leger',
+        },
+
 
 
     ];
@@ -149,7 +154,7 @@ const ArtistSection = () => {
                             ))}
                         </Marquee>
                         <Marquee reverse={true} fade={true} direction="left" className="gap-[0.7rem] [--duration:25s]" innerClassName="gap-[1rem] [--gap:1rem]">
-                            {images.slice(7, 14).map((image, index) => {
+                            {images.slice(7, 15).map((image, index) => {
                                 const adjustedIndex = index + 7; // Adjusting index for the second Marquee
                                 return (
                                     <div key={adjustedIndex} className="marquee-container" >
