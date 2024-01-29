@@ -40,7 +40,11 @@ const NavBar = () => {
 
 
 
-                        <div className="flex flex-row items-center align-center justify-between md:justify-start">
+                        <div className="flex flex-row items-center align-center justify-between md:justify-start"> 
+
+
+
+                            <Image src="/drnazz.png" alt="Dr. Naz" width={120} height={120} />
 
 
                             <button
