@@ -54,26 +54,71 @@ const GigsSection = () => {
 
             <div className="mt-12 flex justify-center">
                 <div className="max-w-screen-l mx-auto overflow-hidden">
-                    <Marquee className="gap-[1rem]" reverse={true} fade={true} >
-                        <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
-                        <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
-                        <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
-                        <Image src="/flags/qatar.png" alt="Qatar Flag" width={80} height={70} />
-                        <Image src="/flags/us.png" alt="US Flag" width={80} height={70} />
-                        <Image src="/flags/syria.png" alt="Syria Flag" width={80} height={70} />
-                        <Image src="/flags/spain.png" alt="Spain Flag" width={80} height={70} />
-                        <Image src="/flags/france.png" alt="France Flag" width={80} height={70} />
-                        <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={80} height={70} />
-                        <Image src="/flags/dubai.png" alt="Dubai Flag" width={80} height={70} />
-                        <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={80} height={70} />
-                        <Image src="/flags/qatar.png" alt="Qatar Flag" width={80} height={70} />
-                        <Image src="/flags/us.png" alt="US Flag" width={80} height={70} />
-                        <Image src="/flags/syria.png" alt="Syria Flag" width={80} height={70} />
-                        <Image src="/flags/spain.png" alt="Spain Flag" width={80} height={70} />
-                        <Image src="/flags/france.png" alt="France Flag" width={80} height={70} />
+
+
+                    <Marquee className="gap-[1rem]" reverse={true} fade={true} pauseOnHover={true}>
+
+
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={150} height={150}  />
+                            <p className="flag-text text-white font-bold">Manama</p>
+                        </div>
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/dubai.png" alt="Dubai Flag" width={150} height={150}  />
+                            <p className="flag-text text-white font-bold">Dubai</p>
+                        </div>
+
+                        <div className="flag-container">
+                            <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={150} height={150}  />
+                            <p className="flag-text text-white font-bold">Beirut</p>
+                        </div>
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/qatar.png" alt="Qatar Flag" width={150} height={150} />
+                            <p className="flag-text text-white font-bold">Doha</p>
+                        </div>
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150}  />
+                            <p className="flag-text text-white font-bold">New York</p>
+                        </div>
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/syria.png" alt="Syria Flag" width={150} height={150} />
+                            <p className="flag-text text-white font-bold">Damascus</p>
+                        </div>
+
+                        <div className="flag-container">
+                            <Image src="/flags/spain.png" alt="Spain Flag" width={150} height={150} />
+                            <p className="flag-text text-white font-bold">Ibiza</p>
+                        </div>
+
+
+                        <div className="flag-container">
+                            <Image src="/flags/france.png" alt="France Flag" width={150} height={150} />
+                            <p className="flag-text text-white font-bold">St Tropez</p>
+                        </div>
+
+                        <div className="flag-container">
+                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150}  />
+                            <p className="flag-text text-white font-bold">Los Angeles</p>
+                        </div>
+                     
+
+                        
+
+
+
                     </Marquee>
-                </div>
-            </div>
+                </div >
+            </div >
 
 
             <Marquee fade={true} pauseOnHover={false} className='mt-5'>
@@ -101,7 +146,7 @@ const GigsSection = () => {
             <button></button>
 
 
-        </section>
+        </section >
 
 
     );

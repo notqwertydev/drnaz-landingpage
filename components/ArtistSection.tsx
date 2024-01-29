@@ -189,7 +189,8 @@ const textStyle = `
     text-lg /* Larger text */
     md:text-4xl
     bg-transparent /* Hollow text */
-    hover:text-red-300 /* Red text on hover */
+    
+    hover:text-[#EE7E72] /* Red text on hover */
     cursor-pointer /* Change cursor to indicate interactivity */
     transition duration-300 ease-in-out /* Smooth transition */
 `;
