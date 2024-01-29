@@ -128,25 +128,44 @@ const ArtistSection = () => {
                 <div className="mySlides fade">
                     <div className="numbertext">{images.indexOf(currentImage) + 1} / {images.length}</div>
                     <img src={currentImage.src} className="slide-image" alt={currentImage.text} />
-                    <div className="text">{currentImage.text}</div>
-                    <br></br>
+                    {/* <div className="text">{currentImage.text}</div>
+                    <br></br> */}
                 </div>
 
-                <div className="mt-10  gap-4 justify-center">
-                    <div className="mt-10 gap-4 justify-center">
-                        <Marquee direction="left">
-                            <div className="marquee-container">
-                                {images.map((image, index) => (
-                                    <button
+                <div className="mt-4  gap-4 flex justify-center">
+                    <div className=" flex flex-col mt-10 gap-4 justify-center w-[90%]">
+                        <Marquee fade={true} direction="left" className="gap-[0.7rem] [--duration:25s]" innerClassName="gap-[1rem] [--gap:1rem]">
+                            {images.slice(0, 7).map((image, index) => (
+                                <div className="marquee-container">
+                                    <span
                                         key={index}
-                                        className={`text-white py-2 px-4 rounded-r m-2 ${index === highlightedButtonIndex ? 'text-red-300' : ''}`}
+                                        className={textStyle + (index === highlightedButtonIndex ? ' text-[#EE7E72]' : '')}
+                                        onMouseEnter={() => changeImage(image, index)}
                                         onClick={() => changeImage(image, index)}
                                     >
                                         {image.text}
-                                    </button>
-                                ))}
-                            </div>
+                                    </span>
+                                </div>
+                            ))}
                         </Marquee>
+                        <Marquee reverse={true} fade={true} direction="left" className="gap-[0.7rem] [--duration:25s]" innerClassName="gap-[1rem] [--gap:1rem]">
+                            {images.slice(7, 14).map((image, index) => {
+                                const adjustedIndex = index + 7; // Adjusting index for the second Marquee
+                                return (
+                                    <div className="marquee-container" >
+                                        <span
+                                            key={adjustedIndex}
+                                            className={textStyle + (adjustedIndex === highlightedButtonIndex ? ' text-[#EE7E72]' : '')}
+                                            onMouseEnter={() => changeImage(image, adjustedIndex)}
+                                            onClick={() => changeImage(image, adjustedIndex)}
+                                        >
+                                            {image.text}
+                                        </span>
+                                    </div>
+                                );
+                            })}
+                        </Marquee>
+
 
                     </div>
 
@@ -163,5 +182,18 @@ const ArtistSection = () => {
         </section>
     );
 }
+
+
+const textStyle = `
+    text-white font-bold uppercase py-2 px-4
+    text-lg /* Larger text */
+    md:text-4xl
+    bg-transparent /* Hollow text */
+    hover:text-red-300 /* Red text on hover */
+    cursor-pointer /* Change cursor to indicate interactivity */
+    transition duration-300 ease-in-out /* Smooth transition */
+`;
+
+
 
 export default ArtistSection;
