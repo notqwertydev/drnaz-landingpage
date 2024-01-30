@@ -23,7 +23,7 @@ const MarqueeComp = () => {
                     
                       
                     >
-                        DENTIST BY DAY DJ BY NIGHT
+                        
 
                      
 
