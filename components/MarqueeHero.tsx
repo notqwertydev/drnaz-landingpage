@@ -23,6 +23,7 @@ const MarqueeComp = () => {
                     
                       
                     >
+                        MAKING PEOPLE SMILE 24/7
                         
 
                      

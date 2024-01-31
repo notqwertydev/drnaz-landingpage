@@ -99,29 +99,7 @@ const ContactSection = () => {
     }
 
 
-    // const handleSubmit = (e: { preventDefault: () => void; }) => {
-    //     e.preventDefault()
-    //     console.log('Sending')
-    //     let data = {
-    //         name,
-    //         email,
-    //         tel,
-    //         type,
-    //         subject,
-    //         date
 
-    //     }
-    //     fetch('/api/contact', {
-    //         method: 'POST',
-    //         headers: {
-    //             'Accept': 'application/json, text/plain, */*',
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify(data)
-    //     }).then((res) => {
-    //         //alert and clear form
-    //     })
-    // }
 
     return (
         <section id='contact' className="lg:p-8 overflow-hidden mt-16">
