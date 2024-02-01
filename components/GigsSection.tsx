@@ -62,18 +62,18 @@ const GigsSection = () => {
 
 
                         <div className="flag-container">
-                            <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={150} height={150}  />
+                            <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Manama</p>
                         </div>
 
 
                         <div className="flag-container">
-                            <Image src="/flags/dubai.png" alt="Dubai Flag" width={150} height={150}  />
+                            <Image src="/flags/dubai.png" alt="Dubai Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Dubai</p>
                         </div>
 
                         <div className="flag-container">
-                            <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={150} height={150}  />
+                            <Image src="/flags/lebanon.png" alt="Lebanon Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Beirut</p>
                         </div>
 
@@ -85,15 +85,15 @@ const GigsSection = () => {
 
 
                         <div className="flag-container">
-                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150}  />
+                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">New York</p>
                         </div>
 
 
-                        <div className="flag-container">
+                        {/* <div className="flag-container">
                             <Image src="/flags/syria.png" alt="Syria Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Damascus</p>
-                        </div>
+                        </div> */}
 
                         <div className="flag-container">
                             <Image src="/flags/spain.png" alt="Spain Flag" width={150} height={150} />
@@ -107,12 +107,12 @@ const GigsSection = () => {
                         </div>
 
                         <div className="flag-container">
-                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150}  />
+                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Los Angeles</p>
                         </div>
-                     
 
-                        
+
+
 
 
 
