@@ -15,7 +15,7 @@ const MarqueeComp = () => {
                     reverse={false}
                     pauseOnHover={false}
 
-                    className="gap-[2rem] [--duration:5s] lg:[--duration:10s] pt-12" // pass class to change gap or speed
+                    className="gap-[2rem] [--duration:10s] lg:[--duration:17s] pt-12" // pass class to change gap or speed
                     innerClassName="" // pass class to change gap or speed
                 >
 
@@ -31,6 +31,31 @@ const MarqueeComp = () => {
 
 
                     </div>
+                    <div className="font-normal tracking-tighter uppercase text-5xl lg:text-[8rem] pb-40 lg:pb-20 text-white"
+
+
+                    >
+                        MAKING PEOPLE SMILE 24/7
+
+
+
+
+
+
+                    </div>
+                    <div className="font-normal tracking-tighter uppercase text-5xl lg:text-[8rem] pb-40 lg:pb-20 text-white"
+
+
+                    >
+                        MAKING PEOPLE SMILE 24/7
+
+
+
+
+
+
+                    </div>
+
 
                 </Marquee>
 
