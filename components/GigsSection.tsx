@@ -31,8 +31,7 @@ const GigsSection = () => {
                                         About
                                     </p> */}
                                     <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
-                                        Dr. Naz is a full time dental surgeon with a passion for music. Dj-ing started as a hobby, that then developed into a more regular venture with requests piling up.
-                                        Fast forward to today, where he has converted his hobby into a full blown career, playing alongside some of the biggest names in the industry and in clubs all over the world.
+                                    Beside his passion for music, Dr. Naz has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
                                     </p>
                                 </div>
 
