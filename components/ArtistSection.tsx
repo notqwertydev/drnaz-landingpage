@@ -124,7 +124,7 @@ const ArtistSection = () => {
                     Music with industry playmakers like you’ve never experienced before.
                 </p>
                 <p className="mt-1 text-xl font-medium tracking-tighter text-white font-display lg:text-1xl">
-                    Over the past year Dr. Naz has been spinning beats alongside globally renown DJs.
+                    Over the past year Nazir has been spinning beats alongside globally renown DJs.
                 </p>
 
             </h1>

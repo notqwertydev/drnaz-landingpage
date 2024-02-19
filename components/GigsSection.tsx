@@ -31,7 +31,7 @@ const GigsSection = () => {
                                         About
                                     </p> */}
                                     <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
-                                    Beside his passion for music, Dr. Naz has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
+                                    Beside his passion for music, Nazir has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
                                     </p>
                                 </div>
 
