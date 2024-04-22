@@ -237,6 +237,14 @@
     filter: grayscale(100%)
   }
 
+  .white{
+    filter:var(--background-white)
+  }
+
+  .invert{
+    filter:invert(100%)
+  }
+
   .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -354,6 +362,7 @@
 .Marquee {
     width: 100%;
 }
+
 
 
 

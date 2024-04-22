@@ -31,7 +31,7 @@ const GigsSection = () => {
                                         About
                                     </p> */}
                                     <p className="mt-12 text-xl font-medium tracking-tighter text-white font-display lg:text-2xl">
-                                    Beside his passion for music, Nazir has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
+                                        Beside his passion for music, Nazir has the ability to connect with people through his music and has played at some of the biggest clubs in Lebanon, UAE, Qatar, Bahrain & Ibiza
                                     </p>
                                 </div>
 
@@ -63,6 +63,11 @@ const GigsSection = () => {
                         <div className="flag-container">
                             <Image src="/flags/bahrain.png" alt="Bahrain Flag" width={150} height={150} />
                             <p className="flag-text text-white font-bold">Manama</p>
+                        </div>
+
+                        <div className="flag-container">
+                            <Image src="/flags/us.png" alt="US Flag" width={150} height={150} />
+                            <p className="flag-text text-white font-bold">Miami</p>
                         </div>
 
 
@@ -115,26 +120,32 @@ const GigsSection = () => {
 
 
 
+
+
                     </Marquee>
                 </div >
             </div >
 
 
-            <Marquee fade={true} pauseOnHover={false} className='mt-5'>
+            <Marquee fade={true} pauseOnHover={false}  className='mt-5'>
 
-
+                
                 <Image src="/logo/ahm.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/amelia.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/analogue.png" alt="Logo" width={110} height={100} />
+                <Image src="/logo/caveau.png" className="black-and-white" alt="Logo" width={110} height={100} />
                 <Image src="/logo/b018.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/bluemarlin.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/hide.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/iris.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/madhouse.png" alt="Logo" width={110} height={100} />
                 <Image src="/logo/odin.png" alt="Logo" width={110} height={100} />
+                <Image src="/logo/tala.png" className="invert" alt="Logo" width={110} height={100} />
                 <Image src="/logo/spine.png" alt="Logo" width={110} height={100} />
-                <Image src="/logo/aya.png" className="black-and-white" alt="Logo" width={140} height={100} />
-                <Image className="black-and-white" src="/logo/gospel.png" alt="Logo" width={140} height={100} style={{
+                <Image src="/logo/boho.png" className="invert" alt="Logo" width={110} height={100} />
+                <Image src="/logo/alma.png" className="invert" alt="Logo" width={110} height={100} />
+                <Image src="/logo/aya.png" className="" alt="Logo" width={110} height={80} />
+                <Image className="invert" src="/logo/gospel.png" alt="Logo" width={110} height={100} style={{
 
 
                 }} />
